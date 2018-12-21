@@ -6,4 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  infoVisible = false;
+  clicks = [];
+
+  onToggleInfo() {
+    this.infoVisible = !this.infoVisible;
+    this.clicks.push(new Date().toString());
+  }
 }
