@@ -16,13 +16,13 @@ export class GameControlComponent implements OnInit {
   }
 
   onStop() {
-
+    clearInterval(this.interval);
   }
 
   onStart() {
     this.interval = setInterval(() => {
-      this.intervalFired.emit(this.counter);
       this.counter++;
+      this.intervalFired.emit(this.counter);
     }, 1000);
   }
 }
