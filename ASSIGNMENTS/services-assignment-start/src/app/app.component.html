@@ -7,6 +7,7 @@
       <app-inactive-users
         [users]="inactiveUsers"
         (userSetToActive)="onSetToActive($event)"></app-inactive-users>
+      <p>{{count}} actions recorded</p>
     </div>
     <!--
       Optimize this app by adding a UsersService which manages the active and inactive users.
