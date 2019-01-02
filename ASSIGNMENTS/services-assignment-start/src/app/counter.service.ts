@@ -1,8 +1,5 @@
-import {EventEmitter, Injectable} from '@angular/core';
+import {EventEmitter} from '@angular/core';
 
-@Injectable({
-  providedIn: 'root'
-})
 export class CounterService {
   countChanged = new EventEmitter<number>();
   count = 0;
